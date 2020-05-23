@@ -9,15 +9,13 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { NoImagenPipe } from './pipes/no-imagen.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     NavbarComponent,
-    FooterComponent,
-    NoImagenPipe
+    FooterComponent
   ],
   imports: [
     BrowserModule,

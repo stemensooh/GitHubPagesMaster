@@ -16,20 +16,20 @@ export class ProfileComponent implements OnInit {
     page1 = 3;
 
     conocimientos: ConocimientoModel[] = new Array();
-    constructor() { 
+    constructor() {
         ConstantModel.data.forEach(element => {
-            let data: ConocimientoModel = new ConocimientoModel();
+            const data: ConocimientoModel = new ConocimientoModel();
             data.descripcion = element.descripcion;
             data.valor = element.valor;
             data.imagen = element.imagen;
-            if(element.valor > 0 && element.valor <= 20) { data.tipo = 'danger'}
-            if(element.valor > 20 && element.valor <= 40) { data.tipo = 'warning'}
-            if(element.valor > 40 && element.valor <= 60) { data.tipo = 'primary'}
-            if(element.valor > 60 && element.valor <= 80) { data.tipo = 'info'}
-            if(element.valor > 80 && element.valor <= 100) { data.tipo = 'success'}
+            if (element.valor > 0 && element.valor <= 20) { data.tipo = 'danger'; }
+            if (element.valor > 20 && element.valor <= 40) { data.tipo = 'warning'; }
+            if (element.valor > 40 && element.valor <= 60) { data.tipo = 'primary'; }
+            if (element.valor > 60 && element.valor <= 80) { data.tipo = 'info'; }
+            if (element.valor > 80 && element.valor <= 100) { data.tipo = 'success'; }
             this.conocimientos.push(data);
         });
     }
 
-    ngOnInit() {}
+    ngOnInit() { }
 }
