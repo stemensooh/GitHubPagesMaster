@@ -1,187 +1,200 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
-    <div class="container">
-      <a class="navbar-brand mr-lg-5" [routerLink]="['/']">
-        <h2 style="color: white"><b>BCAR</b></h2>
-      </a>
-      <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-            [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
-        <div class="navbar-collapse-header">
-          <div class="row">
-            <div class="col-6 collapse-brand">
-              <a [routerLink]="['/']">
-                <h2 style="color: black"><b>BCAR</b></h2>
-              </a>
-            </div>
-            <div class="col-6 collapse-close">
-              <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-                    [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
-                <span></span>
-                <span></span>
-              </button>
-            </div>
+<nav id="navbar-main"
+  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/']">
+      <h2 style="color: white"><b>BCAR</b></h2>
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/']">
+              <h2 style="color: black"><b>BCAR</b></h2>
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
-        <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+      </div>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{url_linklin}}" target="_blank" data-toggle="tooltip"
+            title="Like me on LinkedIn">
+            <i class="fa fa-linkedin-square"></i>
+            <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{url_facebook}}" target="_blank" data-toggle="tooltip"
+            title="Like me on Facebook">
+            <i class="fa fa-facebook-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{url_instagram}}" target="_blank" data-toggle="tooltip"
+            title="Follow me on Instagram">
+            <i class="fa fa-instagram"></i>
+            <span class="nav-link-inner--text d-lg-none">Instagram</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{url_twiter}}" target="_blank" data-toggle="tooltip"
+            title="Follow me on Twitter">
+            <i class="fa fa-twitter-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Twitter</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="{{url_github}}" target="_blank" data-toggle="tooltip"
+            title="Star me on Github">
+            <i class="fa fa-github"></i>
+            <span class="nav-link-inner--text d-lg-none">Github</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="profile-page">
+  <section class="section-profile-cover section-shaped my-0">
+    <!-- Circles background -->
+    <div class="" style="height: 100% ;display:block;margin:auto;">
+      <img class="shape shape-style-1 alpha-4" src="../../assets/img/personal/fondo-pantalla.jpg" alt="">
+    </div>
+    <!-- SVG separator -->
+    <div class="separator separator-bottom separator-skew">
+      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+        xmlns="http://www.w3.org/2000/svg">
+        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="card card-profile shadow mt--300">
+        <div class="px-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 order-lg-2">
+              <div class="card-profile-image">
+                <a href="javascript:void(0)">
+                  <img src="{{url_imagen_perfil}}" class="rounded-circle">
+                </a>
+              </div>
+            </div>
+            <br><br><br><br>
+          </div>
+          <div class="text-center mt-5">
+            <h2><b>Bolívar Cárdenas
+                <span class="font-weight-light">, {{anio}}</span>
+              </b>
+            </h2>
+            <div class="h4 ">
+              <i class="ni location_pin mr-2"></i>
+              <b>Computer Systems Engineer</b>
+            </div>
+          </div>
+          <div class=" py-5 border-top text-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-9">
+                <p>I am simply a FullStack developer but also a Computer Systems Engineer, graduated from Milagro State
+                  University. I learned a lot about software development and still am.</p>
+                <p>I am passionate about learning new technologies. Some of my qualities are: Actodidact, Adaptability,
+                  Communication</p>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center ">
+              <div class="col-lg-12">
+                <h3 class="h4 text-success font-weight-bold">My Skills</h3>
+                <div *ngFor="let data of conocimientos" class="">
+                  <div class="progress-info">
+                    <div class="progress-label">
+                      <img style="height: 30px;" [src]="data.imagen" alt="" class="rounded-circle">
+                      <span>{{data.descripcion}}</span>
+                    </div>
+                    <div class="progress-percentage">
+                      <span>{{data.valor}}%</span>
+                    </div>
+                  </div>
+                  <ngb-progressbar type="{{data.tipo}}" value="{{data.valor}}"></ngb-progressbar>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row row-grid align-items-center ">
+      <div class="col-lg-6">
+        <h3 class="text-primary font-weight-light mb-2">Thank you for visiting me!</h3>
+        <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+      </div>
+      <div class="col-lg-6 text-lg-center btn-wrapper">
+        <a style="background-color: #047cb4;" target="_blank" href="{{url_linklin}}"
+          class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Follow us">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="{{url_facebook}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg"
+          ngbTooltip="Like us">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+        <a target="_blank" href="{{url_instagram}}" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round"
+          ngbTooltip="Follow us">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a target="_blank" href="{{url_twiter}}" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg"
+          ngbTooltip="Follow us">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a target="_blank" href="{{url_github}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
+          ngbTooltip="Star on Github">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="row align-items-center justify-content-md-between">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; {{test | date: 'yyyy'}}
+          <a href="https://www.creative-tim.com?ref=adsa-footer" target="_blank">Creative Tim</a>.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="{{url_linklin}}" target="_blank" data-toggle="tooltip" title="Like me on LinkedIn">
-              <i class="fa fa-linkedin-square"></i>
-              <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
-            </a>
+            <a href="https://www.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Creative Tim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="{{url_facebook}}" target="_blank" data-toggle="tooltip" title="Like me on Facebook">
-              <i class="fa fa-facebook-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Facebook</span>
-            </a>
+            <a href="https://www.creative-tim.com/presentation?ref=adsa-footer" class="nav-link" target="_blank">About
+              Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="{{url_instagram}}" target="_blank" data-toggle="tooltip" title="Follow me on Instagram">
-              <i class="fa fa-instagram"></i>
-              <span class="nav-link-inner--text d-lg-none">Instagram</span>
-            </a>
+            <a href="http://blog.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="{{url_twiter}}" target="_blank" data-toggle="tooltip" title="Follow me on Twitter">
-              <i class="fa fa-twitter-square"></i>
-              <span class="nav-link-inner--text d-lg-none">Twitter</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-icon" href="{{url_github}}" target="_blank" data-toggle="tooltip" title="Star me on Github">
-              <i class="fa fa-github"></i>
-              <span class="nav-link-inner--text d-lg-none">Github</span>
-            </a>
+            <a href="https://github.com/creativetimofficial/argon-design-system-angular/blob/master/LICENSE.md"
+              class="nav-link" target="_blank">MIT License</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-  
-<main class="profile-page">
-    <section class="section-profile-cover section-shaped my-0">
-      <!-- Circles background -->
-      <div class="" style="height: 100% ;display:block;margin:auto;">
-        <img class="shape shape-style-1 alpha-4" src="../../assets/img/personal/fondo-pantalla.jpg" alt="">
-      </div>
-      <!-- SVG separator -->
-      <div class="separator separator-bottom separator-skew">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-          xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="card card-profile shadow mt--300">
-          <div class="px-4">
-            <div class="row justify-content-center">
-              <div class="col-lg-3 order-lg-2">
-                <div class="card-profile-image">
-                  <a href="javascript:void(0)">
-                    <img src="{{url_imagen_perfil}}" class="rounded-circle">
-                  </a>
-                </div>
-              </div>
-              <br><br><br><br>
-            </div>
-            <div class="text-center mt-5">
-              <h2><b>Bolívar Cárdenas
-                  <span class="font-weight-light">, {{anio}}</span>
-                </b>
-              </h2>
-              <div class="h4 ">
-                <i class="ni location_pin mr-2"></i>
-                <b>Computer Systems Engineer</b>
-              </div>
-            </div>
-            <div class=" py-5 border-top text-center">
-              <div class="row justify-content-center">
-                <div class="col-lg-9">
-                  <p>I am simply a FullStack developer but also a Computer Systems Engineer, graduated from Milagro State
-                    University. I learned a lot about software development and still am.</p>
-                  <p>I am passionate about learning new technologies. Some of my qualities are: Actodidact, Adaptability,
-                    Communication</p>
-                </div>
-              </div>
-              <div class="row justify-content-between align-items-center ">
-                <div class="col-lg-12">
-                  <h3 class="h4 text-success font-weight-bold">My Skills</h3>
-                  <div *ngFor="let data of conocimientos" class="">
-                    <div class="progress-info">
-                      <div class="progress-label">
-                        <img style="height: 30px;" [src]="data.imagen" alt="" class="rounded-circle">
-                        <span>{{data.descripcion}}</span>
-                      </div>
-                      <div class="progress-percentage">
-                        <span>{{data.valor}}%</span>
-                      </div>
-                    </div>
-                    <ngb-progressbar type="{{data.tipo}}" value="{{data.valor}}"></ngb-progressbar>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="row row-grid align-items-center ">
-        <div class="col-lg-6">
-          <h3 class="text-primary font-weight-light mb-2">Thank you for visiting me!</h3>
-          <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
-        </div>
-        <div class="col-lg-6 text-lg-center btn-wrapper">
-          <a style="background-color: #047cb4;" target="_blank" href="{{url_linklin}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Follow us">
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a target="_blank" href="{{url_facebook}}" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a target="_blank" href="{{url_instagram}}" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a target="_blank" href="{{url_twiter}}" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" ngbTooltip="Follow us">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a target="_blank" href="{{url_github}}" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="row align-items-center justify-content-md-between">
-        <div class="col-md-6">
-          <div class="copyright">
-            &copy; {{test | date: 'yyyy'}}
-            <a href="https://www.creative-tim.com?ref=adsa-footer" target="_blank">Creative Tim</a>.
-          </div>
-        </div>
-        <div class="col-md-6">
-          <ul class="nav nav-footer justify-content-end">
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Creative Tim</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com/presentation?ref=adsa-footer" class="nav-link" target="_blank">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a href="http://blog.creative-tim.com?ref=adsa-footer" class="nav-link" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="https://github.com/creativetimofficial/argon-design-system-angular/blob/master/LICENSE.md" class="nav-link" target="_blank">MIT License</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
+  </div>
+</footer>
