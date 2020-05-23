@@ -3,10 +3,11 @@ import { CommonModule, } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ProfileComponent } from './profile/profile.component';
+// import { ProfileComponent } from './profile/profile.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', component: ProfileComponent },
+  { path: '', component: AppComponent },
   { path: '', redirectTo: '', pathMatch: 'full' }
 ];
 
