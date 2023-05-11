@@ -31,94 +31,94 @@ export const environment = {
       url_instagram : 'https://www.instagram.com/stemen_sooh/',
     },
     skills: [
-      {
-          id: '',
-          name: 'Python',
-          percent: 85,
-          type: '',
-          image: './assets/img/img-tecnologia/python.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'PHP',
-          percent: 85,
-          type: '',
-          image: './assets/img/img-tecnologia/php.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'SQL Server',
-          percent: 85,
-          type: '',
-          image: './assets/img/img-tecnologia/sqlServer.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'MySQL',
-          percent: 85,
-          type: '',
-          image: './assets/img/img-tecnologia/mySql.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'Angular',
-          percent: 70,
-          type: '',
-          image: './assets/img/img-tecnologia/angular.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'C# .Net',
-          percent:  60,
-          type: '',
-          image: './assets/img/img-tecnologia/cSharp.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'Visual Basic .Net',
-          percent: 60,
-          type: '',
-          image: './assets/img/img-tecnologia/vb.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'Django',
-          percent: 60,
-          type: '',
-          image: './assets/img/img-tecnologia/django.jpg',
-          state: true
-      },
-      {
-          id: '',
-          name: 'ASP.NET',
-          percent: 55,
-          type: '',
-          image: './assets/img/img-tecnologia/aspNet.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'ASP.NET Core',
-          percent: 45,
-          type: '',
-          image: './assets/img/img-tecnologia/netCore.png',
-          state: true
-      },
-      {
-          id: '',
-          name: 'Laravel',
-          percent: 20,
-          type: '',
-          image: './assets/img/img-tecnologia/laravel.png',
-          state: true
-      }
+        {
+            id: '',
+            name: 'Python',
+            percent: 60,
+            type: '',
+            image: './assets/img/img-tecnologia/python.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'PHP',
+            percent: 60,
+            type: '',
+            image: './assets/img/img-tecnologia/php.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'SQL Server',
+            percent: 85,
+            type: '',
+            image: './assets/img/img-tecnologia/sqlServer.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'MySQL',
+            percent: 85,
+            type: '',
+            image: './assets/img/img-tecnologia/mySql.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'Angular',
+            percent: 75,
+            type: '',
+            image: './assets/img/img-tecnologia/angular.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'C# .Net',
+            percent:  85,
+            type: '',
+            image: './assets/img/img-tecnologia/cSharp.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'Visual Basic .Net',
+            percent: 70,
+            type: '',
+            image: './assets/img/img-tecnologia/vb.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'Django',
+            percent: 60,
+            type: '',
+            image: './assets/img/img-tecnologia/django.jpg',
+            state: true
+        },
+        {
+            id: '',
+            name: 'ASP.NET',
+            percent: 85,
+            type: '',
+            image: './assets/img/img-tecnologia/aspNet.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'ASP.NET Core',
+            percent: 85,
+            type: '',
+            image: './assets/img/img-tecnologia/netCore.png',
+            state: true
+        },
+        {
+            id: '',
+            name: 'Laravel',
+            percent: 20,
+            type: '',
+            image: './assets/img/img-tecnologia/laravel.png',
+            state: true
+        }
   ]
   }
 };

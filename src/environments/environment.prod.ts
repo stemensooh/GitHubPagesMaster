@@ -29,7 +29,7 @@ export const environment = {
       {
           id: '',
           name: 'Python',
-          percent: 85,
+          percent: 60,
           type: '',
           image: './assets/img/img-tecnologia/python.png',
           state: true
@@ -37,7 +37,7 @@ export const environment = {
       {
           id: '',
           name: 'PHP',
-          percent: 85,
+          percent: 60,
           type: '',
           image: './assets/img/img-tecnologia/php.png',
           state: true
@@ -61,7 +61,7 @@ export const environment = {
       {
           id: '',
           name: 'Angular',
-          percent: 70,
+          percent: 75,
           type: '',
           image: './assets/img/img-tecnologia/angular.png',
           state: true
@@ -69,7 +69,7 @@ export const environment = {
       {
           id: '',
           name: 'C# .Net',
-          percent:  60,
+          percent:  85,
           type: '',
           image: './assets/img/img-tecnologia/cSharp.png',
           state: true
@@ -77,7 +77,7 @@ export const environment = {
       {
           id: '',
           name: 'Visual Basic .Net',
-          percent: 60,
+          percent: 70,
           type: '',
           image: './assets/img/img-tecnologia/vb.png',
           state: true
@@ -93,7 +93,7 @@ export const environment = {
       {
           id: '',
           name: 'ASP.NET',
-          percent: 55,
+          percent: 85,
           type: '',
           image: './assets/img/img-tecnologia/aspNet.png',
           state: true
@@ -101,7 +101,7 @@ export const environment = {
       {
           id: '',
           name: 'ASP.NET Core',
-          percent: 45,
+          percent: 85,
           type: '',
           image: './assets/img/img-tecnologia/netCore.png',
           state: true
