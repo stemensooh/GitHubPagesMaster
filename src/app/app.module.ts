@@ -7,19 +7,19 @@ import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { environment } from '../environments/environment.prod';
-import { initFirebaseBackend } from './core/utilities/authUtils';
+// import { AngularFireModule } from '@angular/fire';
+// import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from '../environments/environment';
+// import { initFirebaseBackend } from './core/utilities/authUtils';
 import { SkillCardComponent } from './skill-card/skill-card.component';
 
 
-if (environment.defaultauth === 'firebase') {
-  initFirebaseBackend(environment.firebaseConfig);
-} else {
-  // tslint:disable-next-line: no-unused-expression
-  // FakeBackendInterceptor;
-}
+// if (environment.defaultauth === 'firebase') {
+//   initFirebaseBackend(environment.firebaseConfig);
+// } else {
+//   // tslint:disable-next-line: no-unused-expression
+//   // FakeBackendInterceptor;
+// }
 
 @NgModule({
   declarations: [
@@ -33,8 +33,8 @@ if (environment.defaultauth === 'firebase') {
     RouterModule,
     AppRoutingModule,
     
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
+    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    // AngularFireDatabaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

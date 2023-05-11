@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from "@angular/core";
-import { Subscription } from "rxjs/Subscription";
-import "rxjs/add/operator/filter";
+// import { Subscription } from "rxjs/Subscription";
+// import "rxjs/add/operator/filter";
 import { ProfileService } from "./core/services/profile.service";
 import { Profile } from "./core/models/profile.model";
 import { Skill } from "./core/models/skill.model";
